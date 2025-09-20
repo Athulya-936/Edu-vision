@@ -1,0 +1,17 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://your-domain.com/sitemap.xml
+
+# Specific rules for educational content
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 10
+
+# Block access to sensitive areas
+Disallow: /api/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /temp/
